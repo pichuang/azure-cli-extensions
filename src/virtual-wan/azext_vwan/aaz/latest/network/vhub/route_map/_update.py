@@ -69,13 +69,13 @@ class Update(AAZCommand):
         _args_schema.inbound_connection = AAZListArg(
             options=["--inbound-connection"],
             arg_group="Properties",
-            help="List of connections which have this RoutMap associated for inbound traffic.",
+            help="List of connections which have this RoutMap associated for inbound traffic, such as ExpressRouteConnection, HubVirtualNetworkConnection, VpnConnection and P2SConnection.",
             nullable=True,
         )
         _args_schema.outbound_connections = AAZListArg(
             options=["--outbound-connections"],
             arg_group="Properties",
-            help="List of connections which have this RoutMap associated for outbound traffic.",
+            help="List of connections which have this RoutMap associated for outbound traffic, such as ExpressRouteConnection, HubVirtualNetworkConnection, VpnConnection and P2SConnection.",
             nullable=True,
         )
         _args_schema.rules = AAZListArg(
